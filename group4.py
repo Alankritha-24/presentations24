@@ -72,6 +72,6 @@ plt.grid()
 plt.show()
 
 plt.savefig('../figs/presentation.pdf')
-
+plt.savefig('../figs/presentation.eps')
 subprocess.run(shlex.split("termux-open ../figs/presentation.pdf"))
 
