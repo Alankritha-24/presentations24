@@ -33,7 +33,7 @@ omat = np.vstack((o1,o2))
 #print(m)
 
 n = np.dot(omat,m)
-print(n)
+#print(n)
 
 p = np.zeros(2)
 p[0] = np.dot(n,M)
