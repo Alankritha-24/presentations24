@@ -27,7 +27,7 @@ o2 = np.array([-1,0])
 omat = np.vstack((o1,o2))
 
 
-print(m)
+#print(m)
 
 n = np.dot(omat,m)
 print(n)
@@ -36,7 +36,7 @@ p = np.zeros(2)
 p[0] = np.dot(n,M)
 p[1] = np.dot(m,Q)
 
-print(p)
+#print(p)
 
 d = np.vstack((n,m))
 P = np.dot(np.linalg.inv(d),p)
@@ -49,7 +49,7 @@ m2 = np.array([0,1])
 h= np.dot(m1,P)
 k = np.dot(m2,P)
 
-print(k/h)
+#print(k/h)
 
 x_MP = line_gen(M,P)
 plt.plot(x_MP[0,:],x_MP[1,:],label='$MP$')
