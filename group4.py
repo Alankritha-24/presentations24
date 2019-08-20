@@ -2,6 +2,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+import subprocess
+import shlex
+
 M = np.array([1,2])
 N = np.array([-3,4])
 Q = np.array([4,3])
@@ -61,9 +64,14 @@ plt.plot(x_QP[0,:],x_QP[1,:],label='$QP$')
 plt.plot(Q[0], Q[1], 'o')
 plt.text(Q[0] * (1 + 0.1), Q[1] * (1 - 0.1) , 'Q')
 
+plt.xlabel('$x$')
+plt.ylabel('$y$')
 plt.axis('equal')
 plt.legend(loc="best")
 plt.grid()
 plt.show()
 
+plt.savefig('../figs/presentation.pdf')
+plt.savefig('../figs/presentation.eps')
+subprocess.run(shlex.split("termux-open ../figs/presentation.pdf"))
 
