@@ -69,9 +69,10 @@ plt.ylabel('$y$')
 plt.axis('equal')
 plt.legend(loc="best")
 plt.grid()
+
+
+plt.savefig('../figs/presentation_24.pdf')
+plt.savefig('../figs/presentation_24.eps')
+subprocess.run(shlex.split("termux-open ../figs/presentation_24.pdf"))
+
 plt.show()
-
-plt.savefig('../figs/presentation.pdf')
-plt.savefig('../figs/presentation.eps')
-subprocess.run(shlex.split("termux-open ../figs/presentation.pdf"))
-
