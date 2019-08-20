@@ -66,13 +66,13 @@ plt.text(Q[0] * (1 + 0.1), Q[1] * (1 - 0.1) , 'Q')
 
 plt.xlabel('$x$')
 plt.ylabel('$y$')
+plt.legend(loc='best')
+plt.grid() # minor
 plt.axis('equal')
-plt.legend(loc="best")
-plt.grid()
-
-
-plt.savefig('../figs/presentation_24.pdf')
-plt.savefig('../figs/presentation_24.eps')
-subprocess.run(shlex.split("termux-open ../figs/presentation_24.pdf"))
-
+#
+#if using termux
+plt.savefig('../figs/presentation.pdf')
+plt.savefig('../figs/presentation.eps')
+subprocess.run(shlex.split("termux-open ../figs/presentation.pdf"))
+#else
 #plt.show()
