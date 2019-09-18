@@ -1,8 +1,11 @@
+//Function declaration1
 double **createMat(int m,int n);
 double **loadtxt(char *str,int m,int n);
 double **linalg_add(double **a, double **b, int m, int n);
 double **sMul(double a, double **M, int m, int n);
 void saveMat(double **mat, char *str, int m, int n);
+//End Function declaration
+
 
 //begin function for scalar multiplication
 double **sMul(double a, double **M, int m, int n)
